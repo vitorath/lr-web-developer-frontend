@@ -4,6 +4,12 @@ h1 {
 
 #principal {
   color: #9900ff; /*rgb(151, 0, 324)*/
+  background-image: url(./image/backgrounds/fireworks.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* scroll/local */
+  /* background-color: #00ffff88; */
 }
 
 #titulo {
