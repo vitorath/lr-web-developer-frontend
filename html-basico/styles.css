@@ -2,14 +2,16 @@ h1 {
   color: gray;
 }
 
-#principal {
-  color: #9900ff; /*rgb(151, 0, 324)*/
+#paragrafos {
   background-image: url(./image/backgrounds/fireworks.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* scroll/local */
-  /* background-color: #00ffff88; */
+  background-attachment: fixed;
+}
+
+.sub-div {
+  background: #cecece;
 }
 
 #titulo {
