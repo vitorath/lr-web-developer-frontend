@@ -1,3 +1,15 @@
 h1 {
   color: gray;
 }
+
+#principal {
+  color: blue;
+}
+
+#titulo {
+  color: blueviolet;
+}
+
+.texto-dourado {
+  color: goldenrod;
+}
