@@ -21,3 +21,40 @@ h1 {
 .texto-dourado {
   color: goldenrod;
 }
+
+#mm {
+  background-color: red;
+  width: 5mm;
+  height: 5mm;
+}
+
+#cm {
+  background-color: green;
+  width: 1cm;
+  height: 1cm;
+}
+
+#in {
+  background-color: blue;
+  width: 1in;
+  height: 1in;
+}
+
+#px {
+  background-color: blueviolet;
+  width: 10px;
+  height: 10px;
+}
+
+#pt {
+  background-color: burlywood;
+  width: 10pt;
+  height: 10pt;
+}
+
+#pc {
+  /*Equivale 1pc = 12pt*/
+  background-color: salmon;
+  width: 1pc;
+  height: 1pc;
+}
