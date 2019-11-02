@@ -3,11 +3,11 @@ h1 {
 }
 
 #principal {
-  color: blue;
+  color: #9900ff; /*rgb(151, 0, 324)*/
 }
 
 #titulo {
-  color: blueviolet;
+  color: #9900ff88; /*rgba(151, 0, 324, 0.5)*/
 }
 
 .texto-dourado {
