@@ -1,105 +1,31 @@
-h1 {
-  color: gray;
+.borda {
+  border-color: red green blue yellow;
+  border-width: 5px 2px 10px 15px;
 }
 
-#paragrafos {
-  background-image: url(./image/backgrounds/fireworks.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+.circulo {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: yellowgreen;
 }
 
-.sub-div {
-  background: #cecece;
+.dotted {
+  border-top-style: dotted;
 }
 
-#titulo {
-  color: #9900ff88; /*rgba(151, 0, 324, 0.5)*/
+.dashed {
+  border-style: dashed;
 }
 
-.texto-dourado {
-  color: goldenrod;
+.solid {
+  border-style: solid;
 }
 
-#mm {
-  background-color: red;
-  width: 5mm;
-  height: 5mm;
+.none {
+  border-style: none;
 }
 
-#cm {
-  background-color: green;
-  width: 1cm;
-  height: 1cm;
-}
-
-#in {
-  background-color: blue;
-  width: 1in;
-  height: 1in;
-}
-
-#px {
-  background-color: blueviolet;
-  width: 10px;
-  height: 10px;
-}
-
-#pt {
-  background-color: burlywood;
-  width: 10pt;
-  height: 10pt;
-}
-
-#pc {
-  /*Equivale 1pc = 12pt*/
-  background-color: salmon;
-  width: 1pc;
-  height: 1pc;
-}
-
-/* .container {
-  font-size: 24px;
-  width: 300px;
-  background-color: red;
-} */
-
-/* em: Relativo ao tamanho da fonte */
-/* .inside {
-  font-size: 2em;
-  width: 1em;
-  background-color: blue;
-} */
-
-/* html {
-  font-size: 20px;
-} */
-
-/*rem: Relativo ao elemento raiz*/
-/*.inside {
-  font-size: 1rem;
-} */
-
-/* vh, vw, vmin, vmax */
-.container {
-  width: 50vw;
-  background-color: red;
-}
-
-.inside {
-  width: 80%;
-  background-color: blue;
-}
-
-#base {
-  height: 10px;
-  background-color: red;
-}
-
-#container {
-  background-color: blue;
-  color: white;
-  margin: 10px;
-  padding: 10px;
+.hidden {
+  border-style: hidden;
 }
