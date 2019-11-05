@@ -58,3 +58,36 @@ h1 {
   width: 1pc;
   height: 1pc;
 }
+
+/* .container {
+  font-size: 24px;
+  width: 300px;
+  background-color: red;
+} */
+
+/* em: Relativo ao tamanho da fonte */
+/* .inside {
+  font-size: 2em;
+  width: 1em;
+  background-color: blue;
+} */
+
+/* html {
+  font-size: 20px;
+} */
+
+/*rem: Relativo ao elemento raiz*/
+/*.inside {
+  font-size: 1rem;
+} */
+
+/* vh, vw, vmin, vmax */
+.container {
+  width: 50vw;
+  background-color: red;
+}
+
+.inside {
+  width: 80%;
+  background-color: blue;
+}
