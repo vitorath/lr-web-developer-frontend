@@ -1,41 +1,14 @@
-body {
-  padding: 0;
-  margin: 0;
+p {
+  color: rebeccapurple;
+  text-align: justify /*left, right, justify, center*/;
+  text-decoration: line-through overline underline;
+  text-transform: lowercase /*lowercase uppercase, capitalize*/;
+  letter-spacing: 1.2px /* Pode receber negativo */;
+  line-height: 3; /*Pode ser um multiplicador caso não receba nenhuma unidade*/
+  word-spacing: 10px;
+  text-shadow: 2px 2px 3px black; /*Direita, baixo, raio de desfoque e cor*/
 }
 
-.container {
-  background-color: red;
-  padding: 5px;
-  margin: 5px;
-  border: 5px solid yellowgreen;
-}
-
-.conteudo {
-  background-color: #ddd;
-  outline: 5px solid blueviolet; /* Não faz parte do box model */
-  padding: 5px;
-}
-
-.square {
-  width: 100px;
-  height: 100px;
-  background-color: yellowgreen;
-  border: 10px solid blue;
-  padding: 10px;
-}
-
-.square3 {
-  width: 100px;
-  height: 100px;
-  background-color: yellowgreen;
-  border: 10px solid blue;
-  padding: 10px;
-
-  box-sizing: border-box;
-}
-
-.square2 {
-  width: 100px;
-  height: 100px;
-  background-color: yellowgreen;
+a {
+  text-decoration: none;
 }
