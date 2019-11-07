@@ -1,14 +1,7 @@
 p {
-  color: rebeccapurple;
-  text-align: justify /*left, right, justify, center*/;
-  text-decoration: line-through overline underline;
-  text-transform: lowercase /*lowercase uppercase, capitalize*/;
-  letter-spacing: 1.2px /* Pode receber negativo */;
-  line-height: 3; /*Pode ser um multiplicador caso não receba nenhuma unidade*/
-  word-spacing: 10px;
-  text-shadow: 2px 2px 3px black; /*Direita, baixo, raio de desfoque e cor*/
-}
-
-a {
-  text-decoration: none;
+  font-family: Helvetica, Arial, "Comic Sans MS", sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  font-weight: bold; /*400 normal, 700 bold */
+  font-variant: small-caps;
 }
