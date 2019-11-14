@@ -8,38 +8,22 @@
         font-size: 1.2rem;
       }
 
-      .static {
-        position: static;
-      }
-
-      .relative {
-        position: relative;
-        /* right: 40px;
-        top: 15px;
-        left: 20px;*/
-      }
-
-      .fixed {
-        position: fixed;
-        right: 20px;
-        bottom: 20px;
-      }
-
-      .absolute {
-        position: absolute;
-        top: 20px;
+      .sticky {
+        position: sticky;
+        top: 0;
       }
 
       .quadrado {
         width: 100px;
         height: 100px;
-        display: block;
+        display: inline-block;
       }
 
       .retangulo {
-        width: 100px;
+        width: 200px;
         height: 500px;
         margin-top: 10px;
+        overflow-y: auto;
       }
 
       .bg-red {
@@ -57,15 +41,16 @@
   </head>
 
   <body>
-    <div class="quadrado bg-blue static"></div>
-    <!-- <div class="retangulo bg-blue static"></div>
-    <div class="retangulo bg-blue static"></div>
-    <div class="retangulo bg-blue static"></div>
-    <div class="retangulo bg-blue static"></div>
-    <div class="retangulo bg-blue static"></div> -->
-    <div class="retangulo bg-blue relative">
-      <div class="quadrado bg-red static"></div>
-      <div class="quadrado bg-green absolute"></div>
+    <div class="retangulo bg-blue">
+      <div class="quadrado bg-red"></div>
+      <div class="quadrado bg-red"></div>
+      <div class="quadrado bg-green sticky"></div>
+      <div class="quadrado bg-red"></div>
+      <div class="quadrado bg-red"></div>
+      <div class="quadrado bg-red"></div>
+      <div class="quadrado bg-red"></div>
+      <div class="quadrado bg-red"></div>
+      <div class="quadrado bg-red"></div>
     </div>
   </body>
 </html>
