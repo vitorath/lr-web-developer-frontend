@@ -7,55 +7,39 @@
       body {
         font-size: 1.2rem;
       }
-
-      .sticky {
-        position: sticky;
-        top: 0;
+      img {
+        float: left;
       }
 
-      .quadrado {
-        width: 100px;
-        height: 100px;
-        display: inline-block;
+      p {
+        clear: none; /* Não permite flutuação do lado indicado, default none*/
       }
 
-      .retangulo {
-        width: 200px;
-        height: 500px;
-        margin-top: 10px;
-        overflow-y: auto;
-      }
-
-      .bg-red {
-        background-color: red;
-      }
-
-      .bg-blue {
-        background-color: blue;
-      }
-
-      .bg-green {
-        background-color: green;
+      div {
+        padding: 10px;
+        border: 1px solid black;
+        overflow: auto; /* Engloba os itens flutuando*/
       }
     </style>
   </head>
 
   <body>
-    <div class="retangulo bg-blue">
-      <div class="quadrado bg-red"></div>
-      <div class="quadrado bg-red"></div>
-      <div class="quadrado bg-green sticky"></div>
-      <div class="quadrado bg-red"></div>
-      <div class="quadrado bg-red"></div>
-      <div class="quadrado bg-red"></div>
-      <div class="quadrado bg-red"></div>
-      <div class="quadrado bg-red"></div>
-      <div class="quadrado bg-red"></div>
+    <div>
+      <img src="./assets/halloween-bb_c.jpg" alt="" />
+      <img src="./assets/halloween-bb_c.jpg" alt="" />
+      <p>
+        Texto qualquer Texto qualquer Texto qualquer Texto qualquer Texto
+        qualquer Texto qualquer Texto qualquer Texto qualquer Texto qualquer
+        Texto qualquer Texto qualquer Texto qualquer Texto qualquer Texto
+        qualquer Texto qualquer Texto qualquer Texto qualquer Texto qualquer
+        Texto qualquer Texto qualquer Texto qualquer Texto qualquer Texto
+        qualquer Texto qualquer Texto qualquer Texto qualquer Texto qualquer
+        Texto qualquer Texto qualquer Texto qualquer Texto qualquer
+      </p>
     </div>
   </body>
 </html>
 
 <!--
-  Position Fixed é em relação a janela, já o relativo é em relação ao componente
-  Position Absolute tem como referência o pai, além disso a position do pai não deve ser static
--->
+      Float flutua ao lado do próximo elemento
+    -->
