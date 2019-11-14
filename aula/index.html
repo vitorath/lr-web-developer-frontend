@@ -7,35 +7,70 @@
       body {
         font-size: 1.2rem;
       }
-      #quadrado {
-        width: 50px;
-        height: 50px;
-        background-color: blueviolet;
 
-        /* margin: auto; Centralizar */
-        margin-left: auto; /* Alinado a direita */
+      .static {
+        position: static;
       }
-      img {
-        width: 50px;
-        height: 50px;
-        /* display: block;
-        margin: auto; */
+
+      .relative {
+        position: relative;
+        /* right: 40px;
+        top: 15px;
+        left: 20px;*/
       }
-      #container {
-        text-align: center;
+
+      .fixed {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 20px;
+      }
+
+      .quadrado {
+        width: 100px;
+        height: 100px;
+        display: block;
+      }
+
+      .retangulo {
+        width: 100px;
+        height: 500px;
+        margin-top: 10px;
+      }
+
+      .bg-red {
+        background-color: red;
+      }
+
+      .bg-blue {
+        background-color: blue;
+      }
+
+      .bg-green {
+        background-color: green;
       }
     </style>
   </head>
 
   <body>
-    <div id="quadrado"></div>
-    <div id="container">
-      <img src="./assets/icons/success.png" alt="" />
+    <div class="quadrado bg-blue static"></div>
+    <!-- <div class="retangulo bg-blue static"></div>
+    <div class="retangulo bg-blue static"></div>
+    <div class="retangulo bg-blue static"></div>
+    <div class="retangulo bg-blue static"></div>
+    <div class="retangulo bg-blue static"></div> -->
+    <div class="retangulo bg-blue relative">
+      <div class="quadrado bg-red static"></div>
+      <div class="quadrado bg-green absolute"></div>
     </div>
   </body>
 </html>
 
-<!-- 
-  Margin não funciona em display inline e derivados
-  Text align funciona em display inline derivados
+<!--
+  Position Fixed é em relação a janela, já o relativo é em relação ao componente
+  Position Absolute tem como referência o pai, além disso a position do pai não deve ser static
 -->
