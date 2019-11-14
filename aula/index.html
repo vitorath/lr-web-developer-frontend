@@ -7,23 +7,54 @@
       body {
         font-size: 1.2rem;
       }
-      ul {
-        list-style: none;
+      .card {
+        float: left;
+        width: 400px;
+        height: 200px;
+        border: 2px solid green;
+        text-align: center;
+        position: relative;
       }
-      li {
-        float: right;
-        padding: 10px;
-        background-color: #a3b5c7;
-        margin: 5px;
+
+      .card2 {
+        clear: left;
+        float: left;
+        border: 2px solid green;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      .c1 {
+        background-color: red;
+        line-height: 200px; /* Não aceita % */
+      }
+      .c2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: blueviolet;
+
+        transform: translate(-50%, -50%);
       }
     </style>
   </head>
 
   <body>
-    <ul>
-      <li>Home</li>
-      <li>Cursos</li>
-      <li>Contato</li>
-    </ul>
+    <div class="card">
+      <div class="c1">
+        Vitor A Thomazini
+      </div>
+    </div>
+    <div class="card">
+      <div class="c2">
+        Vitor A Thomazini
+      </div>
+    </div>
+    <div class="card2">
+      <div style="background-color: red;">
+        Vitor A Thomazini
+      </div>
+    </div>
   </body>
 </html>
