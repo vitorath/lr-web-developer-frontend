@@ -7,8 +7,19 @@
 
   <body>
     <form method="GET" action="https://www.youtube.com/results">
-      <input type="text" name="search_query" />
-      <input type="submit" />
+      <input type="text" name="search_query" /><br />
+      <input type="password" name="senha" /><br />
+
+      <input type="checkbox" name="cursos" value="op1" />React Native<br />
+      <input type="checkbox" name="cursos" value="op2" />React Js<br />
+
+      <!--Radio mesmo nome indica que está no mesmo grupo-->
+      <input type="radio" name="gender" value="m" checked /> Masculino<br />
+      <input type="radio" name="gender" value="f" /> Feminino<br />
+
+      <input type="reset" value="Limpar" />
+
+      <input type="submit" value="Enviar" />
     </form>
   </body>
 </html>
