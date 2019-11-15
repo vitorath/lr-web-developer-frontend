@@ -8,24 +8,40 @@
       body {
         font-size: 1.2rem;
       }
-      img {
-        width: 300px;
+
+      .header {
+        position: relative;
+
+        margin: auto;
+        width: 80%;
+        height: 80px;
+        background-color: gray;
+      }
+
+      .content {
+        position: absolute;
+
+        width: 70%;
+        height: 70px;
+        background-color: blue;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        color: white;
+        text-align: center;
+        font-size: 6vw;
       }
     </style>
   </head>
 
   <body>
-    <img src="./assets/halloween-bb_c.jpg" />
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
-    </p>
+    <div class="header">
+      <div class="content">
+        Hello World
+      </div>
+    </div>
   </body>
 </html>
