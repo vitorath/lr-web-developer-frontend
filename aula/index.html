@@ -6,42 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style type="text/css">
       body {
-        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
       }
-
       .header {
-        position: relative;
-
+        overflow: hidden;
         margin: auto;
         width: 80%;
-        height: 80px;
-        background-color: gray;
+        background-color: #5c57a4;
+        padding: 15px;
+        font-size: 18px;
+      }
+      .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+      }
+      li {
+        /* display: inline-block; */
+        float: left;
+        color: white;
+        margin-left: 15px;
+      }
+      .logo {
+        float: left;
+        color: white;
       }
 
-      .content {
-        position: absolute;
+      @media screen and (max-width: 700px) {
+        .header {
+          background-color: gray;
+        }
+      }
 
-        width: 70%;
-        height: 70px;
-        background-color: blue;
-
-        top: 50%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
-
-        color: white;
-        text-align: center;
-        font-size: 6vw;
+      @media screen and (max-width: 500px) {
+        .header {
+          background-color: red;
+        }
+        .logo {
+          float: none;
+          text-align: center;
+        }
+        .menu {
+          margin-top: 20px;
+          float: none;
+          text-align: center;
+          display: block;
+        }
+        li {
+          float: none;
+          margin-left: 0;
+          margin-bottom: 5px;
+          padding: 10px;
+        }
       }
     </style>
   </head>
 
   <body>
     <div class="header">
-      <div class="content">
-        Hello World
+      <div class="logo">
+        Logo
       </div>
+      <ul class="menu">
+        <li>Home</li>
+        <li>Curso</li>
+        <li>Contato</li>
+      </ul>
     </div>
   </body>
 </html>
