@@ -1,16 +1,16 @@
 var a = 10;
-var b = 15;
 
-console.log("Soma ", a + b);
-console.log("Subtração", a - b);
-console.log("Módulo", a % b);
+a += 2;
+console.log("+=", a);
 
-var c = a++;
-console.log("N++", c);
-c = ++a;
-console.log("++N", c);
+a -= 2;
+console.log("+=", a);
 
-var c = a--;
-console.log("N--", c);
-c = --a;
-console.log("--N", c);
+a *= 2;
+console.log("*=", a);
+
+a /= 2;
+console.log("/=", a);
+
+a %= 3;
+console.log("%=", a);
