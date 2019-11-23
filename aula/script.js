@@ -1,26 +1,14 @@
-function criarAluno(nome, nota1, nota2) {
-  return {
-    nome: nome,
-    nota1: nota1,
-    nota2: nota2,
-    media: function() {
-      return (this.nota1 + this.nota2) / 2;
-    }
-  };
-}
+var d = new Date("sep 05 2017 22:30");
 
-function Aluno(nome, nota1, nota2) {
-  this.nome = nome;
-  this.nota1 = nota1;
-  this.nota2 = nota2;
+d = new Date("07 05 2017  22:30");
+console.log(d);
 
-  this.media = function() {
-    return (this.nota1 + this.nota2) / 2;
-  };
-}
+d = new Date("12/25/2018");
+console.log(d);
 
-var turma = [new Aluno("Vitor", 9, 8), new Aluno("Franciane", 9, 8.5)];
+var dias = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"];
 
-turma.forEach(function(elemento) {
-  console.log(elemento.nome, elemento.media());
-});
+console.log(d.getFullYear());
+console.log(d.getDate());
+console.log(dias[d.getDay()]);
+console.log(d.getTime());
