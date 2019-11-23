@@ -1,22 +1,31 @@
-function media(n1, n2) {
-  return (n1 + n2) / 2;
+var nomes = ["Vitor", "Franciane", "Ana"];
+var notasA = [7.8, 8.0, 8.5];
+var notasB = [9.0, 8.5, 5.0];
+
+function media(notaA, notaB) {
+  return (notaA + notaB) / 2;
 }
 
-var med = media;
+function passou(media) {
+  if (media > 7) {
+    return "Aprovado";
+  }
+  return "Reprovado";
+}
 
-console.log(med(10, 9));
-console.log(media(10, 9));
-console.log(media(7, 8));
-console.log(media(6.5, 8.3));
-
-var media = function(n1, n2) {
-  return (n1 + n2) / 2;
-};
-
-console.log("Função anônima " + media(10, 9));
-
-var media = (n1, n2) => {
-  return (n1 + n2) / 2;
-};
-
-console.log("Função anônima (arrow functions) " + media(10, 9));
+for (var index in nomes) {
+  var notaA = notasA[index];
+  var notaB = notasB[index];
+  var notaMedia = media(notaA, notaB);
+  console.log(
+    nomes[index] +
+      " - " +
+      notaA +
+      " - " +
+      notaB +
+      " - " +
+      notaMedia +
+      " - " +
+      passou(notaMedia)
+  );
+}
