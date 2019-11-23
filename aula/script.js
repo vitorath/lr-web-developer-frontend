@@ -1,29 +1,15 @@
-var nota1 = 5.0;
-var nota2 = 5.8;
+var numero = 5;
 
-var media = (nota1 + nota2) / 2;
-var conceito = "";
-
-if (media >= 8) {
-  conceito = "Ótimo";
-} else if (media >= 6.5) {
-  conceito = "Bom";
-} else {
-  conceito = "Regular";
+for (var vez = 0; vez < numero; vez++) {
+  console.log("Executando o for, pela " + vez + " vez");
+  vez = 4;
 }
-console.log("Média: " + media + " - Conceito: " + conceito);
+console.log("Acabou for");
 
-switch (conceito) {
-  case "Ótimo":
-    console.log("Parabéns, você é um ótimo aluno");
-    break;
-  case "Bom":
-    console.log("Você é quase perfeito");
-    break;
-  case "Regular":
-    console.log("Estudo um pouco mais");
-    break;
-  default:
-    console.log("Houve algum erro");
-    break;
+numero = Math.random() * 100;
+
+while (numero < 90) {
+  console.log("Número " + numero);
+  numero = Math.random() * 100;
 }
+console.log("Acabou while");
