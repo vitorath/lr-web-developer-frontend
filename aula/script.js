@@ -1,15 +1,9 @@
-var numero = 5;
+var alunos = ["Vitor", "Jośe", "Ana", "Francine"];
 
-for (var vez = 0; vez < numero; vez++) {
-  console.log("Executando o for, pela " + vez + " vez");
-  vez = 4;
+for (var i in alunos) {
+  console.log(i);
 }
-console.log("Acabou for");
 
-numero = Math.random() * 100;
-
-while (numero < 90) {
-  console.log("Número " + numero);
-  numero = Math.random() * 100;
+for (var aluno of alunos) {
+  console.log(aluno);
 }
-console.log("Acabou while");
