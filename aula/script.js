@@ -1,9 +1,12 @@
-console.log("Igual", 10 == "10");
-console.log("Estritamente Igual", 10 === "10");
-console.log("Diferente", 10 != "10");
-console.log("Estritamente Diferente", 10 !== "10");
-console.log("Maior", 10 > 10);
-console.log("Menor", 10 < 10);
-console.log("Menor Igual", 10 <= 10);
-console.log("Maior Igual", 10 >= 10);
-console.log("Maior Igual com tipos diferentes", 10 >= "10");
+console.log("True and True", true && true);
+console.log("True and False", true && false);
+console.log("False and False", false && false);
+console.log("True or True", true || true);
+console.log("True or False", true || false);
+console.log("False or False", false || false);
+
+var c = true;
+c &= false;
+console.log("&=", c);
+c |= true;
+console.log("|=", c);
