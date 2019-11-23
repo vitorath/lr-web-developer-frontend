@@ -1,18 +1,26 @@
-function calcMedia() {
-  return (this.notas[0] + this.notas[1]) / 2;
+function criarAluno(nome, nota1, nota2) {
+  return {
+    nome: nome,
+    nota1: nota1,
+    nota2: nota2,
+    media: function() {
+      return (this.nota1 + this.nota2) / 2;
+    }
+  };
 }
 
-var aluno = {
-  nome: "Vitor",
-  notas: [7.5, 9.8],
-  media: calcMedia
-};
+function Aluno(nome, nota1, nota2) {
+  this.nome = nome;
+  this.nota1 = nota1;
+  this.nota2 = nota2;
 
-var aluno2 = {
-  nome: "Franciane",
-  notas: [7.5, 9.8],
-  media: calcMedia
-};
+  this.media = function() {
+    return (this.nota1 + this.nota2) / 2;
+  };
+}
 
-console.log(aluno, aluno.media());
-console.log(aluno2, aluno2.media());
+var turma = [new Aluno("Vitor", 9, 8), new Aluno("Franciane", 9, 8.5)];
+
+turma.forEach(function(elemento) {
+  console.log(elemento.nome, elemento.media());
+});
