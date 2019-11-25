@@ -1,6 +1,12 @@
-console.log(document);
-console.log(document.body);
-console.log(document.body.innerHTML);
-document.body.innerHTML =
-  "<h1>Este título foi inserido no javascript</h1>" + document.body.innerHTML;
-console.log(document.body.innerHTML);
+let p1 = document.getElementById("p1");
+console.log(p1);
+
+let paragrafos = document.getElementsByClassName("paragrafo");
+console.log(paragrafos);
+
+for (let p of paragrafos) {
+  console.log(p);
+}
+
+let tp = document.getElementsByTagName("p");
+console.log(tp);
