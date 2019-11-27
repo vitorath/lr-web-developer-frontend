@@ -12,16 +12,19 @@
       span {
         display: none;
       }
+      div {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: blueviolet;
+        color: aliceblue;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
-    <h1>Título</h1>
-    <p meuAttr="Vitor A Thomazini" class="paragrafo" id="p1">
-      Paragrafo 1
-      <span>Outro texto</span>
-    </p>
-    <p class="paragrafo" id="p2">Paragrafo 2</p>
-    <p id="p3">Paragrafo 3</p>
+    <h1 onclick="this.style.color = 'red'">Clique em mim</h1>
+    <input type="text" oninput="changeInput(this)" />
+    <div onclick="toggleH1()">Click</div>
     <script src="./script.js"></script>
   </body>
 </html>

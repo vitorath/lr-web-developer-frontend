@@ -1,23 +1,19 @@
-let p1 = document.getElementById("p1");
-p1.innerText = "<h3>Tem h3 dento p</h3>";
+function clickH1() {
+  console.log("Executando função");
+  this.style.color = "red";
+}
 
-let p2 = document.getElementById("p2");
-p2.textContent = "<h3>Tem h3 dento p</h3>";
+function changeInput(input) {
+  let h1 = document.getElementsByTagName("h1")[0];
+  h1.innerText = input.value;
+}
 
-let p3 = document.getElementById("p3");
-p3.innerHTML = "<h3>Tem h3 dento p</h3>";
-
-p1.className = "";
-p1.style = "color: blue;";
-
-let meuAttr = p1.getAttribute("meuAttr");
-console.log(meuAttr);
-console.log(p1);
-
-p1.setAttribute("meuAttr", "Outro valor");
-console.log(p1);
-
-p1.setAttribute("novoAttr", "Nobo valor");
-console.log(p1);
-
-p1.style.backgroundColor = "red";
+function toggleH1() {
+  console.log("tes");
+  let h1 = document.getElementsByTagName("h1")[0];
+  if (h1.style.display === "none") {
+    h1.style.display = "block";
+  } else {
+    h1.style.display = "none";
+  }
+}
