@@ -1,14 +1,9 @@
-function mudarText() {
-  this.innerHTML = "Novo Texto";
-}
+let t1 = document.getElementById("t1");
+let t2 = document.getElementById("t2");
 
-function mouseOut() {
-  this.innerHTML = "Mouse fora do elemento";
-}
+t1.onclick = colorcarEmMaiusculo;
+t2.onclick = colorcarEmMaiusculo;
 
-function loaded() {
-  let t = document.getElementById("titulo");
-  // t.onclick = mudarText;
-  t.addEventListener("click", mudarText);
-  t.addEventListener("mouseout", mouseOut);
+function colorcarEmMaiusculo() {
+  this.innerHTML = this.innerHTML.toUpperCase();
 }
