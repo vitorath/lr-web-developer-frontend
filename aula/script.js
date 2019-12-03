@@ -1,17 +1,17 @@
-function clickElement(e) {
-  console.log("element");
-  console.log(this);
-  console.log(e);
-}
-
-function clickJavascript(e) {
-  console.log("javascript");
-  console.log(this);
-  console.log(e);
-  console.log(e.target);
-}
-
 window.onload = function() {
-  let h1 = document.getElementsByTagName("h1")[0];
-  h1.addEventListener("click", clickJavascript);
+  // let d1 = document.getElementById("d1");
+  // let h1 = d1.children[0];
+  // console.log(h1.parentElement);
+  // console.log(document.body.children);
+  // console.log(document.body.children[0].children);
+
+  function qualOPai(e) {
+    let t = e.target;
+    console.log(t.parentElement);
+  }
+
+  let h1 = document.getElementsByTagName("h1");
+  for (let h of h1) {
+    h.addEventListener("click", qualOPai);
+  }
 };
