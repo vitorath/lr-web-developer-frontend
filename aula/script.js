@@ -1,17 +1,7 @@
-window.onload = function() {
-  // let d1 = document.getElementById("d1");
-  // let h1 = d1.children[0];
-  // console.log(h1.parentElement);
-  // console.log(document.body.children);
-  // console.log(document.body.children[0].children);
-
-  function qualOPai(e) {
-    let t = e.target;
-    console.log(t.parentElement);
-  }
-
-  let h1 = document.getElementsByTagName("h1");
-  for (let h of h1) {
-    h.addEventListener("click", qualOPai);
-  }
-};
+console.log(Math.PI);
+console.log(Math.E);
+console.log(Math.sqrt(16));
+console.log(Math.pow(2, 3));
+console.log(Math.round(Math.random() * 10));
+console.log(Math.floor(5.7));
+console.log(Math.ceil(5.3));
