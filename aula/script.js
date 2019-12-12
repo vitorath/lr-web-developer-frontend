@@ -1,7 +1,24 @@
-let pessoas = ["Vitor", "João", "Pamela", "Marcos"];
+function mudarCor() {
+  let h = document.getElementsByTagName("h1")[0];
+  h.style.color = "blue";
+}
 
-function sortear() {
-  let np = pessoas.length;
-  let ns = Math.floor(Math.random() * np);
-  document.getElementById("display").innerHTML = pessoas[ns];
+var numero = 0;
+var interval;
+var timer;
+
+function atualizarTexto() {
+  let h = document.getElementsByTagName("h1")[0];
+  h.innerHTML += " " + numero;
+  numero++;
+}
+
+function iniciar() {
+  timer = setTimeout(mudarCor, 5000);
+  interval = setInterval(atualizarTexto, 1000);
+}
+
+function parar() {
+  clearInterval(interval);
+  clearTimeout(timer);
 }
