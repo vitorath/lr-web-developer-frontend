@@ -1,14 +1,26 @@
-let a = {
-  nome: "Vitor",
-  age: 25
+// localStorage.setItem("nome", "vitor");
+// console.log(localStorage.getItem("nome"));
+// localStorage.removeItem("nome");
+// console.log(localStorage.getItem("nome"));
+
+let aluno = { nome: "Vitor", nota: "9.2" };
+localStorage.setItem("aluno", JSON.stringify(aluno));
+let alunoReceive = localStorage.getItem("aluno");
+console.log(JSON.parse(alunoReceive));
+localStorage.clear();
+
+onload = function() {
+  let nome = this.localStorage.getItem("name");
+  let h1 = document.getElementById("name");
+  h1.innerHTML = nome;
 };
 
-let b = JSON.stringify(a);
+function atualizar(element) {
+  let valor = element.value;
+  console.log(valor);
 
-let a2 = '{"nome": "Vitor","age": 25 }';
-let b2 = JSON.parse(a2);
+  let h1 = document.getElementById("name");
+  h1.innerHTML = valor;
 
-console.log(a);
-console.log(b);
-console.log(a2);
-console.log(b2);
+  localStorage.setItem("name", valor);
+}
