@@ -1,7 +1,14 @@
-console.log(Math.PI);
-console.log(Math.E);
-console.log(Math.sqrt(16));
-console.log(Math.pow(2, 3));
-console.log(Math.round(Math.random() * 10));
-console.log(Math.floor(5.7));
-console.log(Math.ceil(5.3));
+let a = {
+  nome: "Vitor",
+  age: 25
+};
+
+let b = JSON.stringify(a);
+
+let a2 = '{"nome": "Vitor","age": 25 }';
+let b2 = JSON.parse(a2);
+
+console.log(a);
+console.log(b);
+console.log(a2);
+console.log(b2);
