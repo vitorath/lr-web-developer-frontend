@@ -1,0 +1,39 @@
+h1 {
+  margin-top: 0;
+  color: white;
+}
+
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 300px;
+  margin: auto;
+  background-color: cornflowerblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#resultado p {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  display: block;
+  padding: 7px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  color: black;
+  cursor: pointer;
+  background-color: #cecece;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 4px;
+}

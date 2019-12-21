@@ -1,0 +1,5 @@
+Carne:  cada pessoa come em média 400g de carne, mais de 6h 650g
+Cerveja: 1200ml por pessoa, 6h 2000ml
+Refrigerante/água: 1000ml por pessoa, mais de 6h 1500ml
+
+Crianças valem por 0.5 pessoa

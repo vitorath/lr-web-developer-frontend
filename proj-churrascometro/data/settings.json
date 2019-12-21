@@ -1,0 +1,16 @@
+[
+  {
+    "carne": 400,
+    "cerveja": 1200,
+    "bebida": 1000,
+    "minDuracao": 0,
+    "maxDuracao": 6
+  },
+  {
+    "carne": 650,
+    "cerveja": 2000,
+    "bebida": 1500,
+    "minDuracao": 6,
+    "maxDuracao": 126894656597416
+  }
+]
